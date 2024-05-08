@@ -1,6 +1,14 @@
 // Question 4: Shipping Cost Calculator
 
-function calculateShippingCost() {
+function calculateShippingCost(orderTotal) {
+  if (orderTotal >= 5000) {
+    return "Shipping is free.";
+  } else if (orderTotal >= 3000) {
+    return "Shipping cost is 250 Baht.";
+  } else {
+    return "Shipping cost is 500 Baht.";
+  }
+
   // เริ่มเขียนโค้ดที่นี่
 }
 

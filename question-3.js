@@ -4,7 +4,12 @@ function authenticateUser(username, password) {
   const validUsername = "user123";
   const validPassword = "securepass";
 
-  // เริ่มเขียนโค้ดตรงนี้
+// เริ่มเขียนโค้ดตรงนี้
+if (username === validUsername && password === validPassword) {
+  return "Login successful.";
+} else {
+  return "Login failed. Invalid username or password.";
+}
 }
 
 // ตัวอย่างการใช้งาน
